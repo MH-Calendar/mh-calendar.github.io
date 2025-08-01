@@ -30,7 +30,7 @@ jobs:
         run: npm install
 
       - name: Build VitePress site
-        run: npx vitepress build
+        run: npm run docs:build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
