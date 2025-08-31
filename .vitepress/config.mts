@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "MH-Calendar",
-  base: "/mh-calendar-docs/",
+  base: "/",
   description: "Docs for mh-calendar",
   themeConfig: {
     outline: "deep",
