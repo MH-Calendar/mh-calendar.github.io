@@ -6,11 +6,8 @@ export default defineConfig({
   base: "/mh-calendar-docs/",
   description: "Docs for mh-calendar",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: "Home", link: "/" },
-      { text: "Docs", link: "/markdown-examples" },
-    ],
+    outline: "deep",
+    nav: [{ text: "Home", link: "/" }],
 
     sidebar: [
       {
@@ -20,14 +17,14 @@ export default defineConfig({
       {
         text: "Getting Started",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Installation", link: "/installation" },
+          { text: "Usage", link: "/usage" },
+          { text: "Events", link: "/events" },
+          { text: "Calendar API", link: "/api-examples" },
         ],
       },
     ],
 
-    socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/MH-Calendar" }],
   },
 });
