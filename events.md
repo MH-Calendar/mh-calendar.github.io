@@ -36,9 +36,13 @@ const myEvent = {
 | `endDate`        | `Date`    |    **Yes**    | The `Date` object representing the end date and time of the event.                                                                       |
 | `title`          | `string`  |    No     | The text displayed within the event's visual representation on the calendar.                                                             |
 | `allDay`         | `boolean` |    No     | If `true`, the event will be displayed in the "all-day" section at the top of the 'week' or 'day' view. Time information will be ignored. |
-| `description`    | `string`  |    No     | A longer description or additional details for the event. Not displayed by default, but available in callbacks.                            |
+| `description`    | `string`  |    No     | A longer description or additional details for the event. Not displayed by default, but available in callbacks and the edit modal.                            |
 | `isHidden`       | `boolean` |    No     | If `true`, the event will be hidden from the calendar view.                                                                              |
 | `draggingToggle` | `boolean` |    No     | Overrides the global `allowEventDragging` setting. Set to `false` to prevent this specific event from being dragged.                   |
+
+:::info Custom Properties
+You can add any custom properties to event objects. These properties are preserved and accessible in all callbacks (`onEventClick`, `onEventUpdated`, etc.), allowing you to store additional data like `categoryId`, `userId`, `color`, or any other information your application needs.
+:::
 
 :::tip Adding Custom Data
 You can attach any additional properties to the event object that your application requires (e.g., `categoryId`, `ownerId`, `color`). This data is preserved and will be available in all event-related callbacks like `onEventClick`, allowing you to build rich, interactive features.
